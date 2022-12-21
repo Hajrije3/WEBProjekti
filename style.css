@@ -64,8 +64,10 @@ header.h1{
     margin-right: 15px;
     flex-basis: 150px;
     justify-content: center;
+   flex-wrap:wrap;
     align-content: center;
     align-items:center;
+
     
     
 }
@@ -97,11 +99,55 @@ img:hover{
 }
 
 .footer{
-    padding:20px;
-    text-align: center;
-    background-color:#a9b9b6;
+        width:100%;
+        display:flex;
+        color: white;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1rem 0;
+        background-color: rgb(36, 121, 68);
 }
-#back{
+
+.footer a{
+    color:white;
+    text-decoration:none;
+    cursor: pointer;
+}
+.footer p:hover{
+    transition: all .2s linear;
+    transform: translateX(4px);
+}
+.footer a:hover{
+    color: #14af81;
+}
+.footer-items ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.footer-items li{
+    margin-right: 1rem;
+}
+
+.footer-items_social ul li:hover{
+color: #14af81;
+transform: scale(1.1);
+}
+.footer-items_social ul li{
+    font-size:1.2rem;
+    cursor: pointer;
+    transition: all .2s linear;
+    
+    }
+@media screen and(max-width:320px){
+    .footer{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 2rem;
+    }
+}
+
+.back{
     width: 85px;
     float: left;
     display: block;
@@ -115,4 +161,30 @@ img:hover{
     background-color:#62a598;
     color: white;
     display: flex; 
+}
+.aboutus{
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 200 px;
+    text-align: center; 
+    font-family: 'Times New Roman', Times, serif;
+    background: #1abc9c;
+    color: white;
+    height: 400px;
+    /*svertical-align: bottom;*/
+}
+.paragrafi{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:black;
+}
+.Happycostumers{
+    text-align: center;
+}
+.costumers{
+    text-align: center;
+}
+.klientet{
+    color: crimson;
 }
