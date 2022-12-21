@@ -142,6 +142,7 @@ img:hover{
 .side1{
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
 }
 #slider{
     width: 50%;
