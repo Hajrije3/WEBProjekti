@@ -116,3 +116,45 @@ img:hover{
     color: white;
     display: flex; 
 }
+.row{
+    display: flex;
+    flex-wrap:wrap;
+}
+.main{
+    margin-left: 25px;
+    margin-right: 35px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:20px;
+}
+.main img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+img:hover{
+    opacity: .5;
+    transition: .9s;
+}
+.side{
+    padding: 20px;
+    display: flex;
+}
+.side1{
+    padding: 20px;
+    display: flex;
+}
+#slider{
+    width: 50%;
+    height: 700px;
+}
+#slider1{
+    width: 70%;
+    height: 700px;
+}
+
+
+.row h1{
+    text-align:left;
+    color: aqua;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
