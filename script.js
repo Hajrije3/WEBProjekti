@@ -1,50 +1,33 @@
-$(window).on("hashchange", function () {
-	if (location.hash.slice(1) == "signup") {
-		$(".page").addClass("extend");
-		$("#login").removeClass("active");
-		$("#signup").addClass("active");
-	} else {
-		$(".page").removeClass("extend");
-		$("#login").addClass("active");
-		$("#signup").removeClass("active");
-	}
-});
-$(window).trigger("hashchange");
+function validimi(){
+    var emriUserit = document.getElementById(f.name).value;
+    console.log(emriUserit);
+    var emri2userit = document.getAnimations(l.name).value;
+    console.log(emri2Userit);
+    var emailUserit = document.getAnimations(email).value;
+    console.log(emailUserit);
+    var passUserit = document.getAnimations(pass).value;
+    console.log(passUserit);
+    var pass2Userit = document.getAnimations(c.pass).value;
+    console.log(pass2userit);
+    var telUserit = document.getAnimations(number).value;
+    console.log(telUserit);
 
-function validateLoginForm() {
-	var name = document.getElementById("logName").value;
-	var password = document.getElementById("logPassword").value;
+    if(emriUserit == ""){
+        alert("Please fill in this field ! ")
+    }
+    if(emri2Userit == ""){
+        console.log("Please fill in this field ! ")
+    }
+    if(emailUserit == ""){
+        console.log("Please fill in this field !")
+    }
+    if(pass2Userit == ""){
+        console.log("Please fill in this field ! ")
+    }
+    if(telUserit == ""){
+        console.log("Please fill in this field ! ")
+    } else{
+        alert("Regjistrimi eshte kryer me sukses.")
+    }
 
-	if (name == "" || password == "") {
-		document.getElementById("errorMsg").innerHTML = "Please fill the required fields"
-		return false;
-	}
-
-	else if (password.length < 8) {
-		document.getElementById("errorMsg").innerHTML = "Your password must include atleast 8 characters"
-		return false;
-	}
-	else {
-		alert("Successfully logged in");
-		return true;
-	}
-}
-function validateSignupForm() {
-	var mail = document.getElementById("signEmail").value;
-	var name = document.getElementById("signName").value;
-	var password = document.getElementById("signPassword").value;
-
-	if (mail == "" || name == "" || password == "") {
-		document.getElementById("errorMsg").innerHTML = "Please fill the required fields"
-		return false;
-	}
-
-	else if (password.length < 8) {
-		document.getElementById("errorMsg").innerHTML = "Your password must include atleast 8 characters"
-		return false;
-	}
-	else {
-		alert("Successfully signed up");
-		return true;
-	}
 }
